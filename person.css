@@ -216,6 +216,13 @@ html {
     transition: all ease-in-out .3s;
     min-width: calc(33.33% / 2);
   }
+  @media screen and (max-width: 768px) {
+    .column {
+      max-height: 80vh;
+      max-width: auto;
+    }
+  }
+  
   section:nth-of-type(5) .column:first-of-type {
     flex-grow: 2;
     flex-shrink: 2;
@@ -470,6 +477,7 @@ html {
 	 align-items: center;
 	 /*background: radial-gradient(circle, rgba(78, 78, 78, 1) 0%, rgba(0, 0, 0, 1) 100%);*/
 }
+
  .items-container {
 	 overflow: hidden;
 	 border-radius: 50%;
@@ -536,12 +544,18 @@ html {
 	 transform: translateX(-50%);
 	 filter: brightness(80%);
 }
+@media screen and (max-width: 768px) {
+  .mirror {
+    width: calc(100vh/2);
+  }
+}
  .text {
 	 font-family: 'Playfair Display', serif;
 	 color: white;
 	 font-size: 42px;
 	 opacity: 0;
 	 width: 25%;
+   z-index: 400;
 }
  .text--left {
 	 animation: bluryText 2s linear 1s forwards;
