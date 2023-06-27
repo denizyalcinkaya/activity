@@ -250,12 +250,12 @@ section#galeri{
 }
 @media screen and (max-width: 768px) {
   .mirror {
-    width: 50vw;
+    width: 60vw;
     height: 50vh;
   }
   .items-container{
     height: 35vh;
-    width: 50vw;
+    width: 60vw;
   }
   .text{
     padding: 40px 0 0 0;
